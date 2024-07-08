@@ -1,0 +1,6 @@
+<h2>Results</h2>
+<ul>
+    {% for result in results %}
+        <li>{{ result.name }} - {{ result.domain }} - {{ result.year_founded }} - {{ result.industry }} - {{ result.size_range }} - {{ result.locality }} - {{ result.country }} - <a href="{{ result.linkedin_url }}">LinkedIn</a> - {{ result.current_employee_estimate }} - {{ result.total_employee_estimate }}</li>
+    {% endfor %}
+</ul>
